@@ -25,10 +25,11 @@ function formatTime(seconds) {
 }
 
 async function getSongs() {
-  let a = await fetch("https://manoj-kr24.github.io/Music-Player/songs");
+  let a = await fetch("http://127.0.0.1:5500/songs");
+  // console.log(a)
 
   let response = await a.text();
-  // console.log(response);
+  console.log(response);
 
   let div = document.createElement("div");
 
